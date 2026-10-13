@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en" class="text-center">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AK Law Firm | Texas Personal Injury Lawyer</title>
+    <meta name="description" content="Texas Personal Injury Lawyer">
+    <meta name="theme-color" content="#0d296b">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://akfirm.com/wp-content/themes/ak-law-rebuild/assets/favicon/favicon-96x96.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="AK Law Firm | Texas Personal Injury Lawyer">
+    <meta property="og:description" content="Texas Personal Injury Lawyer">
+    <meta property="og:image" content="project-media/43/AK-1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preload" as="image" href="project-media/43/AK-1.jpg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <style>
+    /* Ensure visually-hidden works even if Bootstrap CSS fails to load */
+    .visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    :root {
+        --brand:#0d296b;
+        --brand-600:#0b235b;
+        --ink:#0f172a;
+        --surface:#f7f9fc;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+        margin-top: 0;
+        font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background-color: #0e0e0e;
+        color: var(--ink);
+    }
+
+    .hero-title, h1, h2, h3 {
+        font-family: "Playfair Display", serif;
+        letter-spacing: .2px;
+    }
+    .hero-title { font-size: clamp(2.6rem, 6vw, 4rem); }
+    h2 { font-size: clamp(1.6rem, 3.2vw, 2.2rem); }
+
+    a.inline-link { text-decoration: underline; text-underline-offset: 3px; }
+
+    #mainHeader {
+        position: fixed; top: 0; right: 0; left: 0; z-index: 2000;
+        background: rgba(13,41,107,0);
+        transition: background-color .3s ease, box-shadow .3s ease, backdrop-filter .3s ease, border-color .3s ease;
+        border-bottom: 1px solid transparent;
+    }
+    #mainHeader.scrolled {
+        background: rgba(13,41,107,.65);
+        box-shadow: 0 6px 18px rgba(0,0,0,.25);
+        backdrop-filter: saturate(140%) blur(10px);
+        border-bottom: 1px solid rgba(255,255,255,.18);
+    }
+
+    .hero-section { padding-top: 100px; position: relative; color: #fff; overflow: hidden; min-height: 400px; }
+    .hero-section::before {
+        content:""; position:absolute; inset:0;
+        background: radial-gradient(1200px 600px at 60% 20%, rgba(255,255,255,.07), transparent 60%),
+                   linear-gradient(to bottom, rgba(0,0,0,.32), rgba(0,0,0,.52));
+        pointer-events:none;
+    }
+    .hero-title { font-weight: 700; margin-bottom: .5rem; text-shadow: 0 2px 18px rgba(0,0,0,.28); }
+
+    .accent { position: relative; display: inline-block; padding-bottom: .25rem; }
+    .accent::after {
+        content: ""; position: absolute; left: 50%; transform: translateX(-50%); bottom: -12px;
+        width: 72px; height: 2px; border-radius: 999px;
+        background: linear-gradient(90deg, rgba(255,255,255,.0) 0%, #ffffff 50%, rgba(255,255,255,.0) 100%);
+        opacity: .95;
+    }
+    .accent-dark::after {
+        background: linear-gradient(90deg, rgba(13,41,107,0) 0%, var(--brand) 50%, rgba(13,41,107,0) 100%);
+    }
+
+    .section-wrap { padding: 2rem; position:relative; }
+    .section-inner { max-width: 70ch; margin: 0 auto; text-align: left; }
+    .prose p {
+        font-size: 1.05rem; line-height: 1.9; letter-spacing: .01em; margin-bottom: 1.15rem;
+        color: #0f0f10; text-align: justify;
+    }
+    .section-wrap:not(:first-child)::before {
+        content:""; position:absolute; top:-1.5rem; left:0; right:0; height:1px;
+        background: linear-gradient(90deg, transparent, rgba(13,41,107,.12), transparent);
+    }
+
+    .figure { border-radius: 1rem; overflow: hidden; box-shadow: 0 8px 22px rgba(0,0,0,.15); }
+    .figure img { display: block; width: 100%; height: auto; transition: transform .28s ease; }
+    .figure:hover img { transform: scale(1.015); }
+
+    .btn-ghost {
+        display: inline-flex; align-items: center; gap: .6rem;
+        padding: .68rem 1.15rem; border: 1px solid rgba(255,255,255,.85); color: #fff;
+        background: rgba(255,255,255,.085); border-radius: 999px;
+        backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+        box-shadow: 0 10px 28px rgba(0,0,0,.25); text-decoration: none; font-weight: 600; letter-spacing: .02em;
+        transition: transform .15s ease, background .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,.15); border-color: #ffffff; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(0,0,0,.32); }
+    .btn-ghost i { transition: transform .18s ease; }
+    .btn-ghost:hover i { transform: translateX(4px); }
+    .btn-ghost:focus-visible { outline: 2px solid #ffffff; outline-offset: 3px; }
+    .btn-ghost:active { transform: translateY(0); }
+
+    #mainHeader a { color:#fff; text-decoration:none; }
+
+    .header-icon {
+        display:inline-flex; align-items:center; justify-content:center;
+        width:40px; height:40px; border-radius:999px; margin-left:.5rem;
+        color:#fff; text-decoration:none; outline-offset:2px;
+    }
+    .header-icon i { font-size:1.5rem; line-height:1; }
+    .header-icon:focus-visible { outline:2px solid #fff; }
+    @media (hover:hover){ .header-icon:hover{ background: rgba(255,255,255,.12); } }
+
+    .reveal { opacity: 0; transform: translateY(12px); transition: opacity .55s ease, transform .55s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    .footer-link { text-decoration: none; }
+    .footer-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+    footer { position: relative; background: #0c0c0c; }
+    footer::before {
+        content:""; position:absolute; top:0; left:0; right:0; height:2px;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,.22), transparent); opacity:.6;
+    }
+
+    a:focus-visible, button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+    #services { scroll-margin-top: 110px; }
+
+    @media (prefers-reduced-motion: reduce) {
+        .reveal, .figure img, .btn-ghost, .accent::after { transition: none; animation: none; }
+        html { scroll-behavior: auto; }
+    }
+
+    #backToTop { position: fixed; right: 16px; bottom: 16px; z-index: 1040; display: none; }
+    </style>
+</head>
+<body class="bg-dark text-dark">
+
+    <header id="mainHeader" class="text-white py-3 d-flex align-items-center">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="text-start mb-0">
+                <a href="#" class="text-white text-decoration-none" aria-label="Texas Personal Injury Lawyer home">Texas Personal Injury Lawyer</a>
+            </h1>
+            <div><a href="https://www.facebook.com/ourinjurylawyers/" class="header-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i><span class="visually-hidden">Facebook</span></a><a href="https://www.instagram.com/ourinjurylawyers/" class="header-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i><span class="visually-hidden">Instagram</span></a></div>
+        </div>
+    </header>
+
+    <section class="hero-section"
+             style="background-image: url('project-media/43/AK-1.jpg'); background-size: cover; background-position: center; height: 100vh; position: relative;">
+      <div class="container hero-content"
+           style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; color: white;">
+        <div class="d-flex flex-column align-items-center text-center">
+          <h2 class="hero-title accent mb-3">AK Law Firm</h2>
+          <a href="#services" class="btn-ghost" role="button" aria-label="Read more about services">
+            Read More <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <main style="background-color: #ffffff;">
+        <div class="container py-5" style="margin-top:0;">
+            <div id="services" class="row justify-content-center mb-5">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="section-wrap reveal">
+                        <h2 class="mb-4 text-center text-capitalize" style="font-weight: 700; color:var(--brand);">
+                            <span class="accent accent-dark">Proven Texas Accident Counsel</span>
+                        </h2>
+                        <div class="section-inner prose">
+                            <p>Clear guidance after an injury-related event can help people make informed decisions without adding unnecessary complexity to an already difficult situation. By consulting <a href="https://sfo3.digitaloceanspaces.com/lawfirm/aklaw-1/texas-personal-injury-lawyer.html" class="inline-link">Texas Personal Injury Lawyer</a>, individuals can gain a better understanding of how to organize records, evaluate communications, and prepare for each stage of a potential claim. Support from Texas Personal Injury Lawyer may also help reduce confusion when multiple parties, deadlines, or coverage questions are involved.</p>
+                            <p>Effective representation often depends on careful preparation, consistent documentation, and a practical assessment of the facts. When Texas Personal Injury Lawyer is involved, the process can become more focused, with attention given to evidence, applicable standards, and the full scope of losses that may be relevant. In addition, Texas Personal Injury Lawyer can assist with strategic communication, helping ensure that important details are presented clearly and at the right time.</p>
+                            <p>Every matter is unique, so a thoughtful approach should account for immediate needs as well as longer-term concerns. Guidance from Texas Personal Injury Lawyer can provide structure while helping people understand possible paths forward, whether the issue is resolved through negotiation or requires additional action. With steady support, injured individuals and their families can move through the process with greater confidence and a clearer sense of direction.</p>
+                            <figure class="figure mt-4">
+                                <img src="project-media/51/AK-2.png" loading="lazy" decoding="async" alt="Texas Personal Injury Lawyer image">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="section-wrap reveal">
+                        <h2 class="mb-4 text-center text-capitalize" style="font-weight: 700; color: var(--brand);">
+                            <span class="accent accent-dark">Houston Injury Recovery Attorneys</span>
+                        </h2>
+                        <div class="section-inner prose">
+                            <p>The period following a harmful incident can be overwhelming, especially when recovery, household needs, and financial concerns all require attention at once. Working with Texas Personal Injury Lawyer can help a person focus on practical priorities while gaining a clearer view of the process ahead. Early conversations with Texas Personal Injury Lawyer may also reduce confusion by identifying important details, deadlines, and records that should be preserved.</p>
+                            <div class="row align-items-center mb-4">
+                                <div class="col-md-6">
+                                    <p>Every situation depends on its own facts, including how the incident occurred, who may be responsible, and what losses resulted from the harm suffered. A careful review by Texas Personal Injury Lawyer can help connect medical information, witness accounts, reports, and other materials into a more complete picture. When questions arise about settlement discussions or formal proceedings, Texas Personal Injury Lawyer can provide informed direction while helping protect a person's interests.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="ratio ratio-16x9 mx-auto" style="border-radius: 1rem; overflow: hidden; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);">
+                                        <video class="w-100 h-100" controls playsinline preload="metadata" title="Texas Personal Injury Lawyer video" style="width:100%; height:100%; background:#000;"><source src="https://akfirm.com/wp-content/uploads/2025/10/h264_aac_hd_hfr.mp4" type="video/mp4"></video>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Reliable legal support is often valuable because recovery is not only about immediate treatment, but also about long-term stability and fair consideration of all related effects. With Texas Personal Injury Lawyer, individuals can approach important decisions with greater confidence and avoid feeling pressured into choices that may not reflect their needs. Professional assistance can offer structure, communication, and perspective during a demanding time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="section-wrap reveal">
+                        <h2 class="mb-4 text-center text-capitalize" style="font-weight: 700; color:var(--brand);">
+                            <span class="accent accent-dark">Dallas Injury Settlement Counsel</span>
+                        </h2>
+                        <div class="section-inner prose">
+                            <p>When an injury disrupts normal routines, it can be difficult to know which details deserve attention first and which steps may affect a future claim. A consultation with Texas Personal Injury Lawyer can provide structure by helping injured individuals understand timelines, documentation needs, and common issues that may arise during negotiations. With input from Texas Personal Injury Lawyer, people can also approach conversations with insurers, medical providers, and other parties with greater confidence and preparation.</p>
+                            <p>A well-managed claim often depends on accurate records, consistent communication, and a clear understanding of how responsibility and losses may be evaluated. Guidance from Texas Personal Injury Lawyer can help organize medical bills, treatment notes, wage information, photographs, and witness details in a way that supports a more complete review. When questions arise about settlement offers or procedural requirements, Texas Personal Injury Lawyer can help explain options in practical terms so decisions are based on reliable information rather than pressure or uncertainty.</p>
+                            <p>Every situation has unique facts, so personalized legal guidance can be valuable when injuries affect work, mobility, family obligations, or long-term plans. By working with Texas Personal Injury Lawyer, individuals can better assess the strength of a claim, prepare for potential challenges, and pursue a resolution that reflects the circumstances involved. Professional support also helps keep the process focused, organized, and aligned with the injured person's needs from the initial review through potential settlement discussions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8 reveal">
+                  <h2 class="mb-4 text-center text-capitalize" style="font-weight: 700; color:var(--brand);">
+                  <span class="accent accent-dark">
+                  <i class="bi bi-geo-alt" style="margin-right:.5rem;"></i>AK Law Firm</span>
+                  </h2>
+
+                    <div class="mb-4 ratio ratio-16x9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.1821925115014!2d-95.4566837!3d29.772372899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c1ac3c390829%3A0x2b3c1c6659c3c647!2sAK%20Law%20Firm%20Accident%20%26%20Injury%20Lawyers!5e0!3m2!1sen!2sin!4v1791280751257!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                    <p class="fw-bold" style="color: #000000;">AK Law Firm</p>
+                    <p style="color: #000000;">333 W Loop N Fwy Suite 300, Houston, TX 77024, United States</p>
+                    <p style="color: #000000;">(833) 957-3067</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white bg-dark mt-5">
+        <div class="container py-4 py-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column mb-4 mb-md-0 reveal">  <h3 class="fs-6 text-white section-title-sm">AK Law Firm</h3>  <ul class="list-unstyled">    <li><a class="link-light footer-link" href="Texas-Personal-Injury-Lawyer.html" rel="noopener">Company Website</a></li>    <li><a class="link-light footer-link" href="https://akfirm.com/" rel="noopener">https://akfirm.com/</a></li>    <li><a class="link-light footer-link" href="" rel="noopener"></a></li>  </ul></div><div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column mb-4 mb-md-0 reveal">  <h3 class="fs-6 text-white section-title-sm">Useful Links</h3>  <ul class="list-unstyled">    <li><a class="link-light footer-link" href="" rel="noopener">Proven Texas Accident Counsel</a></li>    <li><a class="link-light footer-link" href="https://akfirm.com/" rel="noopener">Houston Injury Recovery Attorneys</a></li>    <li><a class="link-light footer-link" href="https://maps.app.goo.gl/NCH8xCJapwYvgeaK9" rel="noopener">Dallas Injury Settlement Counsel</a></li>  </ul></div><div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column mb-4 mb-md-0 reveal">  <h3 class="fs-6 text-white section-title-sm">Follow us on Social Media</h3>  <ul class="list-unstyled">    <li><a class="link-light footer-link" href="https://www.facebook.com/ourinjurylawyers/" rel="noopener">Facebook</a></li>    <li><a class="link-light footer-link" href="https://www.instagram.com/ourinjurylawyers/" rel="noopener">Instagram</a></li>    <li><a class="link-light footer-link" href="" rel="noopener"></a></li>  </ul></div>
+            </div>
+            <div class="mt-4">
+                
+<section class="safe-news-wall" aria-label="Houston, Texas, United states">
+  <style>
+    .safe-news-wall { background:#f4f4f6; color:#333; padding:18px 12px 24px; border-radius:2px; }
+    .safe-news-wall h2 { margin:0 0 16px; color:#111; text-align:center; font-family:Arial, sans-serif; font-size:28px; line-height:1.2; font-weight:400; }
+    .safe-news-grid { column-count:4; column-gap:14px; }
+    .safe-news-card { display:inline-block; width:100%; break-inside:avoid; margin:0 0 14px; padding:18px; background:#fff; border:1px solid #ddd; border-radius:4px; color:#333; text-align:left; text-decoration:none; box-sizing:border-box; }
+    .safe-news-card:hover { color:#333; text-decoration:none; box-shadow:0 4px 16px rgba(66,66,66,.16); }
+    .safe-news-card h3 { margin:0 0 14px; color:#333; font-family:Arial, sans-serif; font-size:24px; line-height:1.25; font-weight:700; letter-spacing:0; }
+    .safe-news-card img { display:block; width:100%; height:auto; margin:0 0 14px; object-fit:cover; }
+    .safe-news-card p { margin:0 0 16px; color:#444; font-family:Arial, sans-serif; font-size:18px; line-height:1.55; }
+    .safe-news-meta { color:#8396a8; font-family:Arial, sans-serif; font-size:15px; line-height:1.4; }
+    @media (max-width: 1100px) { .safe-news-grid { column-count:3; } }
+    @media (max-width: 800px) { .safe-news-grid { column-count:2; } }
+    @media (max-width: 560px) { .safe-news-grid { column-count:1; } .safe-news-wall h2 { font-size:24px; } .safe-news-card h3 { font-size:21px; } }
+  </style>
+  <h2>Houston, Texas, United states</h2>
+  <div class="safe-news-grid">
+    <a class="safe-news-card" href="https://www.theguardian.com/us-news/2026/oct/11/ice-agent-strikes-man-with-car-texas" target="_blank" rel="noopener noreferrer"><h3>ICE agent strikes man with vehicle during pursuit in Texas, officials say</h3><img src="https://i.guim.co.uk/img/media/b28352fabb5c189d2572371cef960d4e38c283bb/328_0_2500_2000/master/2500.jpg?width=1200&amp;height=1200&amp;quality=85&amp;auto=format&amp;fit=crop&amp;s=81f0fe62fa405844868bc9f837a01628" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Parra-Hernandez suffered a broken leg and taken to a hospital after being hit by car during an ICE operation</p><div class="safe-news-meta">theguardian.com - 1d</div></a><a class="safe-news-card" href="https://thesun.ng/us-based-nigerian-jailed-for-online-fraud-in-texas/" target="_blank" rel="noopener noreferrer"><h3>US-based Nigerian jailed for online fraud in Texas</h3><img src="https://cdn.thesun.ng/wp-content/uploads/2026/10/edikan_adiakpan.png" alt="" loading="lazy" referrerpolicy="no-referrer"><p>A United States court has sentenced a Nigerian living in Houston, Texas, Edikan Adiakpan, to two years and six months in federal prison for laundering proceeds from an online fraud scheme</p><div class="safe-news-meta">thesun.ng - 3d</div></a><a class="safe-news-card" href="https://www.worldatlas.com/places/the-largest-domed-stadiums-in-the-united-states.html" target="_blank" rel="noopener noreferrer"><h3>The Largest Domed Stadiums In The United States</h3><img src="https://www.worldatlas.com/r/w1200-q80/upload/a0/58/c0/shutterstock-2360060273-s3cdn.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>See six of the largest covered stadiums in the US, including record-setting domes, retractable roofs, and open-air designs.</p><div class="safe-news-meta">worldatlas.com - 3d</div></a><a class="safe-news-card" href="https://markets.businessinsider.com/news/stocks/plains-state-bank-focuses-business-loans-on-flexible-financing-as-houston-companies-navigate-capital-needs-1036610987" target="_blank" rel="noopener noreferrer"><h3>Plains State Bank Focuses Business Loans on Flexible Financing as Houston Companies Navigate Capital Needs</h3><img src="https://storage.googleapis.com/mmstudio-images/gallery/uFfwwPMFt3WoxzSQRJZDChp5pod2/1791496648922-0.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Plains State Bank is emphasizing flexible business lending options for Houston-area companies seeking capital for expansion, equipment, property...</p><div class="safe-news-meta">markets.businessinsider.com - 4d</div></a><a class="safe-news-card" href="https://www.indexbox.io/blog/diesel-prices-near-record-highs-threaten-us-economy-during-harvest-season/" target="_blank" rel="noopener noreferrer"><h3>Diesel Prices Near Record Highs Threaten US Economy During Harvest Season</h3><img src="https://www.indexbox.io/landing/img/blog/telegram-fallback/347ccf938934b715e1e03f59ca397657.webp" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Diesel prices are nearing all-time highs, driving up costs across the US economy. With harvest season in full swing, farmers face soaring fuel expenses, and consumers may soon feel the pinch.</p><div class="safe-news-meta">indexbox.io - 5d</div></a><a class="safe-news-card" href="https://www.houstonpublicmedia.org/articles/news/criminal-justice/2026/10/07/563853/texas-execution-would-be-first-in-u-s-since-tennessee-failure/" target="_blank" rel="noopener noreferrer"><h3>Texas carries out nation’s first execution since Tennessee’s botched attempt</h3><img src="https://cdn.houstonpublicmedia.org/wp-content/uploads/2026/10/07152936/TCJD-Execution.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>If executed, Howard would be the seventh man executed in Texas this year. Two more men are scheduled to be put to death in 2026.</p><div class="safe-news-meta">houstonpublicmedia.org - 5d</div></a><a class="safe-news-card" href="https://www.houstonpublicmedia.org/articles/court/2026/10/06/563686/houston-doctor-indicted-for-alleged-30m-covid-fraud-scheme-doj-says/" target="_blank" rel="noopener noreferrer"><h3>Houston doctor indicted for alleged $30M COVID fraud scheme, DOJ says</h3><img src="https://cdn.houstonpublicmedia.org/wp-content/uploads/2019/10/17154919/20191017-IMG_1783-1200x800.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>In one instance, the indictment alleges that over 9,000 claims for federal reimbursement were filed in a single day, meaning that a patient had visited every nine seconds over 24 hours.</p><div class="safe-news-meta">houstonpublicmedia.org - 6d</div></a><a class="safe-news-card" href="https://www.click2houston.com/news/local/2026/10/04/texas-toughened-its-mail-theft-law-a-houston-area-woman-is-still-waiting-for-her-stolen-dollar900/" target="_blank" rel="noopener noreferrer"><h3>Texas toughened its mail theft law. A Houston-area woman is still waiting for her stolen $900</h3><img src="https://bc.gmg.io/image/upload/c_thumb,q_auto,w_700,f_jpg/media/video/kprc/e113d04e-a7fd-4dad-a24c-913cdd92df19/image.jpg?api_key=click2houston_85fdeb57f8cd3635" alt="" loading="lazy" referrerpolicy="no-referrer"><div class="safe-news-meta">click2houston.com - 7d</div></a><a class="safe-news-card" href="https://sports.yahoo.com/articles/why-everyone-around-world-hates-100034070.html" target="_blank" rel="noopener noreferrer"><h3>‘This is why everyone around the world hates America’: Canada coach addresses Donald Trump World Cup incident</h3><img src="https://s.yimg.com/lo/mysterio/api/76bca6caac32d1c61895ce9966b5775641b69cef0b704beb4def8876182f102d/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthe_comeback_288%2F3d4526546b80319a8ebb70d028ebedfc.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>During the 2026 World Cup, FIFA made an unusual move when it overturned a suspension for United States star Folarin Balogun, allowing him to allow him to play in the Round of 16 match against Belgium. The move drew immediate criticism, especially after President Donald Trump confirmed calling FIFA President Gianni Infantino to request a…</p><div class="safe-news-meta">sports.yahoo.com - 8d</div></a><a class="safe-news-card" href="https://www.galvnews.com/news_reuters/texas/oct-4-2026-houston-texas-usa-houston-texans-cornerback-kamari-lassiter-3-reacts-after-a/image_0583bd7c-9e39-50d0-9eac-e7dfda42fa95.html" target="_blank" rel="noopener noreferrer"><h3>Oct 4, 2026; Houston, Texas, USA; Houston Texans cornerback Kamari Lassiter (3) reacts after a play during the game against the Dallas Cowboys at Reliant Stadium. Mandatory Credit: Troy Taormina-Imagn Images</h3><img src="https://bloximages.newyork1.vip.townnews.com/galvnews.com/content/tncms/assets/v3/editorial/0/58/0583bd7c-9e39-50d0-9eac-e7dfda42fa95/6ac31049dad25.image.jpg?crop=800%2C420%2C0%2C56" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Oct 4, 2026; Houston, Texas, USA; Houston Texans cornerback Kamari Lassiter (3) reacts after a play during the game against the Dallas Cowboys at Reliant Stadium.</p><div class="safe-news-meta">galvnews.com - 8d</div></a><a class="safe-news-card" href="https://sports.yahoo.com/articles/usa-vs-mexico-2026-friendly-140000511.html" target="_blank" rel="noopener noreferrer"><h3>USA vs. Mexico, 2026 Friendly: Time, TV schedule, streaming and lineups</h3><img src="https://s.yimg.com/lo/mysterio/api/e270ab5bc3ceacefa01b2e35d1eedb29c14384aa82cd6e297efd3d35fcd410fc/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F45295e8b0314deb525393c182d645ec3.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>A rivalry renewed.</p><div class="safe-news-meta">sports.yahoo.com - 9d</div></a><a class="safe-news-card" href="https://www.starsandstripesfc.com/usmnt-news/46346/usa-vs-mexico-2026-friendly-time-tv-schedule-streaming-and-lineups" target="_blank" rel="noopener noreferrer"><h3>USA vs. Mexico, 2026 Friendly: Time, TV schedule, streaming and lineups</h3><img src="https://platform.starsandstripesfc.com/wp-content/uploads/sites/151/2026/10/gettyimages-2223855758.jpg?quality=90&amp;strip=all&amp;crop=0%2C2.2719153372221%2C100%2C78.49570343342&amp;w=1200" alt="" loading="lazy" referrerpolicy="no-referrer"><p>A rivalry renewed.</p><div class="safe-news-meta">starsandstripesfc.com - 9d</div></a><a class="safe-news-card" href="https://www.indexbox.io/blog/oil-prices-fall-as-europe-weighs-emergency-reserve-release-under-us-pressure/" target="_blank" rel="noopener noreferrer"><h3>Oil Prices Fall as Europe Weighs Emergency Reserve Release Under U.S. Pressure</h3><img src="https://www.indexbox.io/landing/img/blog/telegram-fallback/00375ae150a335d3b398f55daa49f4be.webp" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Oil prices tumbled Friday, with WTI down 3.78% to $89.36 and Brent below $100 at $99.79, as Europe weighed a coordinated emergency reserve release pressed by the U.S. amid a tightening global diesel market.</p><div class="safe-news-meta">indexbox.io - 10d</div></a><a class="safe-news-card" href="https://www.houstonchronicle.com/news/houston-texas/trending/article/1943-bronze-lincoln-cents-22457684.php" target="_blank" rel="noopener noreferrer"><h3>Rare penny worth more than $235,000 acquired by Houston-area business</h3><img src="https://s.hdnux.com/photos/01/67/40/37/31328255/3/rawImage.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Hundreds of people likely held the coin without realizing it&#x27;s value.</p><div class="safe-news-meta">houstonchronicle.com - 10d</div></a><a class="safe-news-card" href="https://www.investopedia.com/6-best-big-cities-for-retirement-top-financial-and-lifestyle-benefits-for-retire-12132129" target="_blank" rel="noopener noreferrer"><h3>The 6 Best Big Cities for Retirement Offering Top Financial and Lifestyle Benefits</h3><img src="https://www.investopedia.com/thmb/d4rW7QYwGjcWHTy5fg1xWQ7qlfs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2231212920-da0182b2a2b043b7bb4a64b583cc405b.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Here are the top six U.S. cities for retirement, offering unique financial and lifestyle benefits. Learn how urban living can enhance your retirement experience.</p><div class="safe-news-meta">investopedia.com - 11d</div></a><a class="safe-news-card" href="https://sports.yahoo.com/articles/outrage-grows-against-al-michaels-023233905.html" target="_blank" rel="noopener noreferrer"><h3>Outrage Grows Against Al Michaels After Embarrassing TNF Broadcasting Error During Steelers-Browns Game</h3><img src="https://s.yimg.com/lo/mysterio/api/5b3b4e0168fc530abeddc8dae4a8233df26bfdc2a3fa13007e37bbadb23ad677/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fessentiallysports_articles_591%2F31641b53a1649e24dd32a0b2614337be.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Four weeks into the season, veteran broadcaster Al Michaels has already messed up more than once. Calling the Steelers vs.</p><div class="safe-news-meta">sports.yahoo.com - 11d</div></a><a class="safe-news-card" href="https://www.aol.com/articles/outrage-grows-against-al-michaels-023233000.html" target="_blank" rel="noopener noreferrer"><h3>Outrage Grows Against Al Michaels After Embarrassing TNF Broadcasting Error During Steelers-Browns Game</h3><img src="https://hermes.media.transform.aol.com/56765ab6018c5ccc76eb56d4ddcdede9dc03c7ed/w_1200,c_scale,f_auto,q_auto/https:/hermes.media.static.aol.com/media/2026/10/02/4c0db909-3eb1-317d-8113-e8bea6cb2179/4bfd4880-7e66-4555-bd76-8c1ae64652b6.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Four weeks into the season, veteran broadcaster Al Michaels has already messed up more than once. Calling the Steelers vs.</p><div class="safe-news-meta">aol.com - 11d</div></a><a class="safe-news-card" href="https://www.texastribune.org/2026/09/30/texas-congress-house-elections-2026-midterms/" target="_blank" rel="noopener noreferrer"><h3>2026 Texas congressional races: Who is running and what to know</h3><img src="https://i0.wp.com/www.texastribune.org/wp-content/uploads/2026/09/DC-Capitol-Hill-Jan-6-SH-09.jpg?quality=100&amp;w=1200&amp;h=630&amp;ssl=1" alt="" loading="lazy" referrerpolicy="no-referrer"><p>The state&#x27;s six most competitive U.S. House contests include four redrawn seats Republicans hope to flip and two where they are playing defense. All are majority Hispanic.</p><div class="safe-news-meta">texastribune.org - 13d</div></a><a class="safe-news-card" href="https://www.fox26houston.com/news/truong-quoc-duong-houston-federal-prison-spring-medical-center-arson" target="_blank" rel="noopener noreferrer"><h3>Houston man sentenced to federal prison for $3.5M Spring medical center arson</h3><img src="https://images.foxtv.com/static.fox26houston.com/www.fox26houston.com/content/uploads/2022/11/1280/720/wooden-gavel.jpg?ve=1&amp;tl=1" alt="" loading="lazy" referrerpolicy="no-referrer"><p>A 55-year-old man has been sentenced federal prison after planning an arson that destroyed a Spring medical facility and injured a firefighter, costing nearly $3.6 million.</p><div class="safe-news-meta">fox26houston.com - 13d</div></a><a class="safe-news-card" href="https://www.indexbox.io/blog/oil-prices-rise-as-us-iran-diplomacy-stalls-middle-east-supply-risks-persist/" target="_blank" rel="noopener noreferrer"><h3>Oil Prices Rise as U.S.-Iran Diplomacy Stalls, Middle East Supply Risks Persist</h3><img src="https://www.indexbox.io/landing/img/blog/telegram-fallback/08a9e49b5f3119ca78a17a8f5a5a0d5b.webp" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Oil prices climbed as stalled U.S.-Iran talks kept Middle East supply risks alive, with Brent at $106.90 and WTI at $93.80, even as regional crude exports rose to 12.8 million bpd in September.</p><div class="safe-news-meta">indexbox.io - 14d</div></a><a class="safe-news-card" href="https://www.houstonpublicmedia.org/articles/news/texas/2026/09/28/563004/the-u-s-and-mexico-arent-breaking-up-over-cartels-theyre-arguing-over-whos-to-blame/" target="_blank" rel="noopener noreferrer"><h3>The U.S. and Mexico aren’t breaking up over cartels. They’re arguing over who’s to blame.</h3><img src="https://cdn.houstonpublicmedia.org/wp-content/uploads/2026/09/28141353/2026-09-21t000000z-1268355601-mt1zuma000zyln95-rtrmadp-3-zuma-1500x1000.webp" alt="" loading="lazy" referrerpolicy="no-referrer"><p>At the United Nations this week, President Trump described Mexico as an &quot;epicenter&quot; of cartel violence and reasserted that its government must reclaim territory controlled by criminal groups.</p><div class="safe-news-meta">houstonpublicmedia.org - 14d</div></a><a class="safe-news-card" href="https://www.houstonpublicmedia.org/articles/news/politics/election-2026/2026/09/28/562922/texas-senate-race-spending-talarico-paxton-super-pacs/" target="_blank" rel="noopener noreferrer"><h3>Paxton-Talarico contest on course to demolish Texas record for campaign spending in a U.S. Senate election</h3><img src="https://cdn.houstonpublicmedia.org/wp-content/uploads/2026/09/22082855/20260727-james-talarico-ken-paxton-kera-1500x1001.webp" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Collective spending on advertising by Democratic state Rep. James Talarico, Republican Attorney General Ken Paxton, and super PACs supporting each of them has already topped $153 million. AdImpact projects it will reach more than double that by Election Day.</p><div class="safe-news-meta">houstonpublicmedia.org - 14d</div></a><a class="safe-news-card" href="https://www.indexbox.io/blog/oil-prices-fall-for-sixth-straight-session-as-us-iran-talks-and-saudi-pipeline-restart-ease-supply-fears/" target="_blank" rel="noopener noreferrer"><h3>Oil Prices Fall for Sixth Straight Session as U.S.-Iran Talks and Saudi Pipeline Restart Ease Supply Fears</h3><img src="https://www.indexbox.io/landing/img/blog/telegram-fallback/0cb624c96eb94dcb24f7a04dac9f9b81.webp" alt="" loading="lazy" referrerpolicy="no-referrer"><p>Oil prices slid for a sixth straight day as U.S.-Iran talks renewed hopes of reopening the Strait of Hormuz and Saudi Arabia&#x27;s East-West pipeline resumed partial operations after drone attacks.</p><div class="safe-news-meta">indexbox.io - 17d</div></a><a class="safe-news-card" href="https://www.si.com/college/houston/football/houston-cougars-unique-connections-to-georgia-southern-heading-into-week-4" target="_blank" rel="noopener noreferrer"><h3>Houston Cougars&#x27; Unique Connections to Georgia Southern Heading Into Week 4</h3><img src="https://images2.minutemediacdn.com/image/upload/c_crop,x_152,y_0,w_2260,h_1271/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/ReutersImages/mmsport/houston_cougars_on_si/01m3b6e04q6qj9pdgxmd.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><p>The Cougars will be facing a familiar name from the program&#x27;s past.</p><div class="safe-news-meta">si.com - 17d</div></a>
+  </div>
+</section>
+
+            </div>
+        </div>
+    </footer>
+
+    <a id="backToTop" href="#top" class="btn btn-light rounded-pill shadow-sm px-3 py-2" aria-label="Back to top">↑ Top</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var header = document.getElementById("mainHeader");
+        var backToTop = document.getElementById("backToTop");
+        var reveals = document.querySelectorAll('.reveal');
+
+        window.addEventListener("scroll", function() {
+            var scrolled = window.scrollY > 50;
+            header.classList.toggle("scrolled", scrolled);
+            backToTop.style.display = window.scrollY > 600 ? "inline-flex" : "none";
+        });
+
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('visible');
+                        io.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            reveals.forEach(el => io.observe(el));
+        } else {
+            reveals.forEach(el => el.classList.add('visible'));
+        }
+    });
+    </script>
+
+</body>
+</html>
